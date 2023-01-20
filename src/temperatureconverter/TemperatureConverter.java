@@ -22,7 +22,6 @@ public class TemperatureConverter {
             case 'C' -> CelsiusConverter.convert(this.temperature);
             case 'F' -> FahrenheitConverter.convert(this.temperature);
             case 'K' -> KelvinConverter.convert(this.temperature);
-            default -> throw new IllegalStateException("Unexpected value: " + unit);
         }
     }
 
